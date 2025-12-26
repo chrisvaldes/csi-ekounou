@@ -1,0 +1,288 @@
+<div class="main-content app-content " style="margin-top: 5.5rem;">
+    <div class="container-fluid">
+
+        <!-- Page Header -->
+        <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+            <h1 class="page-title fw-semibold fs-18 mb-0">Gestion des clients</h1>
+            <div class="ms-md-1 ms-0">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">CSIE</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">clients</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header Close -->
+
+        <!-- Start::row-1 -->
+        <div class="row">
+            <div class="col-xxl-8 col-xl-7">
+                <div class="card custom-card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <div class="card-title">Liste des clients</div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div>
+                                <input class="form-control form-control-md" type="text"
+                                    placeholder="Recherche un client" aria-label=".form-control-md example">
+                            </div>
+                            <div class="dropdown d-flex align-items-center justify-content-center">
+                                <a href="javascript:void(0);"
+                                    class="btn btn-primary btn-sm btn-wave waves-effect waves-light ">
+                                    <i class="fas fa-search me-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap  table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Téléphone</th>
+                                        <th scope="col">Ville</th>
+                                        <th scope="col">N.ach...</th>
+                                        <th scope="col">N.prod</th>
+                                        <th scope="col">T.Achat</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Owono Nguini</td>
+                                        <td>+243 81 234 5678</td>
+                                        <td>Kinshasa</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0 FCFA</td>
+                                        <td class="d-flex align-items-center justify-content-center gap-2">
+                                            <a routerLink="/csie/detail-client"
+                                                class="btn btn-sm btn-info-light btn-wave waves-effect waves-light"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-sm btn-danger-light btn-wave waves-effect waves-light"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex align-items-center">
+                            <div class="" style="font-weight: bolder;">
+                                Total : 0
+                            </div>
+                            <div class="ms-auto">
+                                <nav aria-label="Page navigation" class="pagination-style-4">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="javascript:void(0);">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link"
+                                                href="javascript:void(0);">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link text-primary" href="javascript:void(0);">
+                                                next
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-5">
+                <div class="card custom-card">
+                    <div class="card-header">
+                        <div class="card-title">Nouveau client</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row gy-3">
+                            <div class="col-xl-12">
+                                <label for="nom" class="form-label">Nom du client</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Nom du client">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="telephone" class="form-label">Téléphone du client</label>
+                                <input type="text" class="form-control" id="telephone"
+                                    placeholder="Téléphone du client">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="email" class="form-label">Email du client</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email du client">
+                            </div>
+                            <div class="col-xl-12 d-flex gap-2  align-items-center justify-content-between">
+                                <div class="col-xl-6">
+                                    <label for="date" class="form-label">Date de Naissance</label>
+                                    <input type="date" class="form-control" id="date" placeholder="Date de Naissance">
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <label for="type-client" class="form-label">Type de client</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Type de client
+                                        </option>
+                                        <option value="1">Particulier</option>
+                                        <option value="2">Entreprise</option>
+                                        <option value="3">Personne</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="pays" class="form-label">Pays du client</label>
+                                <input type="text" class="form-control" id="pays" placeholder="Pays du client">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="ville" class="form-label">Ville du client</label>
+                                <input type="text" class="form-control" id="ville" placeholder="Ville du client">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="quartier" class="form-label">Quartier du client</label>
+                                <input type="text" class="form-control" id="quartier" placeholder="Quartier du client">
+                            </div>
+
+                            <div class="  d-flex gap-2  align-items-center justify-content-between">
+                                <a href="javascript:void(0);" class="btn btn-primary btn-wave waves-effect waves-light">
+                                    EFFACER
+                                </a>
+                                <a href="javascript:void(0);"
+                                    class="btn btn-success-light btn-wave waves-effect waves-light">
+                                    ENREGISTRER
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End::row-1 -->
+
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalToggle" aria-labelledby="exampleModalToggleLabel" tabindex="-1"
+    aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <div class="card-title">Nouvelle désignation-produit</div>
+                </div>
+                <div class="card-body">
+                    <div class="row gy-3">
+                        <div class="col-xl-12">
+                            <label for="designation" class="form-label">Nom de la désignation/produit</label>
+                            <input type="text" class="form-control" id="designation"
+                                placeholder="Nom de la désignation/produit">
+                        </div>
+                        <div class="col-xl-12">
+                            <label for="description" class="form-label">Description de la
+                                désignation/produit</label>
+                            <input type="text" class="form-control" id="description"
+                                placeholder="Description de la désignation/produit">
+                        </div>
+                        <div class="col-xl-12 d-flex gap-2  align-items-center justify-content-between">
+                            <div class="col-xl-6">
+                                <label for="identifian" class="form-label">Identifiant article</label>
+                                <input type="text" class="form-control" id="identifiant"
+                                    placeholder="identifiant article">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="numero-lot" class="form-label">Numéro de lot</label>
+                                <input type="text" class="form-control" id="numero-lot" placeholder="Numéro de lot">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <label for="quantite" class="form-label">Quantité en stock</label>
+                            <input type="number" class="form-control" id="quantite" placeholder="Quantité en stock">
+                        </div>
+                        <div class="col-xl-12 d-flex gap-2  align-items-center justify-content-between">
+                            <div class="col-xl-6">
+                                <label for="identifian" class="form-label">Identifiant article</label>
+                                <input type="text" class="form-control" id="identifiant"
+                                    placeholder="identifiant article">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="prix" class="form-label">Prix de vente</label>
+                                <input type="number" class="form-control" id="prix" placeholder="prix de vente">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 d-flex gap-2  align-items-center justify-content-between">
+                            <div class="col-xl-6">
+                                <label for="date" class="form-label">Ce périme le</label>
+                                <input type="date" class="form-control" id="date" placeholder="Ce périme le">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="peremption" class="form-label">Alerte péremption</label>
+                                <input type="text" class="form-control" id="peremption" placeholder="Alerte péremption">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <label for="categorie" class="form-label">Associer une catégorie?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Associer une catégorie?
+                                </option>
+                                <option value="1">Daniel</option>
+                                <option value="2">Thiery</option>
+                                <option value="3">Corine</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-12">
+                            <label for="fournisseur" class="form-label">Associer un fournisseur?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Associer un fournisseur?
+                                </option>
+                                <option value="1">Daniel</option>
+                                <option value="2">Thiery</option>
+                                <option value="3">Corine</option>
+                            </select>
+                        </div>
+                        <div class="  d-flex gap-2  align-items-center justify-content-between">
+                            <a data-bs-dismiss="modal" aria-label="Close"
+                                class="btn btn-primary btn-wave waves-effect waves-light" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                EFFACER
+                            </a>
+                            <a href="javascript:void(0);"
+                                class="btn btn-success-light btn-wave waves-effect waves-light"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ENREGISTRER
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2" tabindex="-1"
+    aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalToggleLabel2">Modal 2
+                </h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+            </div>
+        </div>
+    </div>
+</div>

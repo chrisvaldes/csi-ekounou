@@ -1,0 +1,165 @@
+<aside class="app-sidebar sticky" id="sidebar"  >
+
+    <!-- Start::main-sidebar-header -->
+    <div class="main-sidebar-header">
+        <a href="index.html" class="header-logo">
+            <img src="assets/images/csie.png" alt="logo" class="desktop-logo">
+            <img src="assets/images/csie.png" alt="logo" class="toggle-logo">
+            <img src="assets/images/csie.png" alt="logo" class="desktop-dark">
+            <img src="assets/images/csie.png" alt="logo" class="toggle-dark">
+            <img src="assets/images/csie.png" alt="logo" class="desktop-white">
+            <img src="assets/images/csie.png" alt="logo" class="toggle-white">
+        </a>
+    </div>
+    <!-- End::main-sidebar-header -->
+
+    <!-- Start::main-sidebar -->
+    <div class="main-sidebar" id="sidebar-scroll" data-simplebar="init">
+        <div class="simplebar-wrapper" style="margin: -8px 0px -80px;">
+            <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+            </div>
+            <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                    <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content"
+                        style="height: 100%; overflow: hidden scroll;">
+                        <div class="simplebar-content" style="padding: 8px 0px 80px;">
+
+                            <!-- Start::nav -->
+                            <nav class="main-menu-container nav nav-pills flex-column sub-open open active">
+                                <div class="slide-left active d-none" id="slide-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <ul class="main-menu" style="display: block; margin-left: 0px; margin-right: 0px;">
+                                    <!-- Start::slide__category -->
+
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide ">
+                                        <a routerLink="gestion-depenses" routerLinkActive="active"
+                                            [routerLinkActiveOptions]="{ exact: true }" class="side-menu__item gap-2">
+                                            <i class="fas fa-sack-dollar fs-14" style="color: #e74c3c;"></i>
+
+                                            <span class="side-menu__label">GESTION DES DEPENSES </span>
+
+                                        </a>
+                                        <a routerLink="gestion-factures" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-calculator  fs-14" style="color: #e74c3c;"></i>
+                                            <span class="side-menu__label">GESTION DES FACTURES</span>
+
+                                        </a>
+
+                                    </li>
+                                    <!-- End::slide -->
+
+                                    <!-- Start::slide__category -->
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide ">
+                                        <a routerLink="ventes" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-chart-line fs-14" style="color: #f39c12;"></i>
+                                            <span class="side-menu__label">VENTE</span>
+
+                                        </a>
+                                        <a routerLink="caisse" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-shopping-cart fs-14" style="color: #f39c12;"></i>
+                                            <span class="side-menu__label">CAISSE </span>
+                                        </a>
+
+                                    </li>
+                                    <!-- End::slide -->
+
+                                    <!-- Start::slide__category -->
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide ">
+                                        <a routerLink="designation-produit" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-box fs-14" style="color: #f39c12;"></i>
+                                            <span class="side-menu__label">DESIGNATION-PRODUIT</span>
+
+                                        </a>
+                                        <a routerLink="service-main-dœuvre" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-tools fs-14" style="color: #e67e22;"></i>
+                                            <span class="side-menu__label">SERVICES-MAIN D'OEUVRE </span>
+                                        </a>
+
+                                    </li>
+                                    <!-- End::slide -->
+
+                                    <!-- Start::slide__category -->
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide ">
+                                        <a routerLink="clients" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-users fs-14" style="color: #3498db;"></i>
+                                            <span class="side-menu__label">CLIENTS</span>
+
+                                        </a>
+                                        <a routerLink="fournisseurs" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-truck fs-14" style="color: #e67e22;"></i>
+                                            <span class="side-menu__label">FOURNISSEURS</span>
+                                        </a>
+
+                                    </li>
+                                    <!-- End::slide -->
+
+                                    <!-- Start::slide__category -->
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide ">
+                                        <a routerLink="profil" routerLinkActive="active" class="side-menu__item gap-2">
+                                            <i class="fas fa-user-circle fs-14" style="color: #27ae60;"></i>
+                                            <span class="side-menu__label">PROFIL</span>
+                                        </a>
+                                    </li>
+                                    <!-- End::slide -->
+                                    <!-- Start::slide__category -->
+                                    <li class="slide__category"><span class="category-name">Main</span></li>
+                                    <!-- End::slide__category -->
+                                    <!-- Start::slide -->
+                                    <li class="slide " style="width: 90%;">
+                                        <a href="javascript:void(0);" class="side-menu__item"
+                                            style="background-color: orange;border-radius: 5px; display: flex; justify-content: center; align-items: center;">
+                                            <span class="side-menu__label" style="color: white;">DECONNEXION</span>
+                                        </a>
+                                    </li>
+                                    <!-- End::slide -->
+
+
+                                    <!-- End::slide -->
+                                </ul>
+                                <div class="slide-right d-none" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
+                                        </path>
+                                    </svg></div>
+                            </nav>
+                            <!-- End::nav -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simplebar-placeholder" style="width: auto; height: 1820px;"></div>
+        </div>
+        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+            <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+        </div>
+        <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+            <div class="simplebar-scrollbar"
+                style="height: 102px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+        </div>
+    </div>
+    <!-- End::main-sidebar -->
+
+</aside>
