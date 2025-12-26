@@ -17099,7 +17099,7 @@ code[class*=language-] {
 .app-sidebar .side-menu__item.active .side-menu__label,
 .app-sidebar .side-menu__item.active .side-menu__angle, .app-sidebar .side-menu__item:hover .side-menu__label,
 .app-sidebar .side-menu__item:hover .side-menu__angle {
-  color: var(--menu-prime-color);
+  color: var(--default-border);
 }
 .app-sidebar .side-menu__item.active .side-menu__icon, .app-sidebar .side-menu__item:hover .side-menu__icon {
   fill: var(--menu-prime-color);
@@ -17152,7 +17152,7 @@ code[class*=language-] {
 }
 .app-sidebar .side-menu__label {
   white-space: nowrap;
-  color: var(--menu-prime-color);
+  color: var(--default-border);
   position: relative;
   font-size: 0.8rem;
   line-height: 1;

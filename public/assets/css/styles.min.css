@@ -20123,7 +20123,8 @@ code[class*=language-] {
 .app-sidebar .side-menu__item.active,
 .app-sidebar .side-menu__item:hover {
     color: var(--menu-prime-color);
-        background-color: #20c997; 
+        background-color: #20c997;
+    color: #ffffff;
 }
 
 .app-sidebar .side-menu__item.active .side-menu__angle,
